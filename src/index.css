@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@theme {
+  --color-neon-pink: #FF2A6D;
+  --color-neon-cyan: #05D9E8;
+  --color-neon-green: #00FF9C;
+  --color-neon-gold: #FFD700;
+  --color-void: #080808;
+}
+
+@layer base {
+  body {
+    @apply bg-void text-gray-100 font-mono antialiased;
+  }
+}

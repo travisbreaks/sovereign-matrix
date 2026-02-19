@@ -29,30 +29,49 @@ function cn(...inputs: ClassValue[]) {
 
 // --- Data ---
 const initialProjects: Project[] = [
-    { id: "1", name: "Project Jasper (AWS/Clawdbot)", category: "Tech (Core)", enjoyment: 9, resources: 10, viability: 9, scale: 8, status: "BUILD NOW", action: "Finalize EC2 instance & repo connection." },
-    { id: "2", name: "WGU Psychology Degree", category: "Education", enjoyment: 6, resources: 10, viability: 10, scale: 10, status: "BUILD NOW", action: "Complete current course module THIS WEEK" },
-    { id: "3", name: "Visualizer (React/Three.js)", category: "Tech (Exp)", enjoyment: 8, resources: 9, viability: 8, scale: 4, status: "SUSTAIN", action: "Integrate into travisBREAKS; don't standalone." },
-    { id: "4", name: "Suno Prompting System", category: "Creative", enjoyment: 7, resources: 10, viability: 9, scale: 2, status: "SUSTAIN", action: "Transfer from ChatGPT to Jasper." },
-    { id: "5", name: "Project 1137 (Research)", category: "Tech (Exp)", enjoyment: 8, resources: 8, viability: 5, scale: 3, status: "SUSTAIN", action: "Keep live, stop developing." },
-    { id: "6", name: "Sandcastle Dreams (Video)", category: "Creative", enjoyment: 9, resources: 7, viability: 5, scale: 6, status: "SUSTAIN", action: "Mocap testing only; do not animate full eps." },
-    { id: "7", name: "Dudes 'n Dragons Media", category: "Content", enjoyment: 8, resources: 8, viability: 6, scale: 5, status: "SUSTAIN", action: "Make this a hobby category, not brand." },
-    { id: "8", name: "Adv. Creative Web Dev Tech Stack", category: "Business", enjoyment: 8, resources: 6, viability: 5, scale: 7, status: "SUSTAIN", action: "Use for 'Jasper' development." },
-    { id: "9", name: "Spirituality Brand", category: "Business", enjoyment: 5, resources: 8, viability: 6, scale: 6, status: "SUSTAIN", action: "Put content on travisBREAKS blog." },
-    { id: "10", name: "Sovereign Fitness PWA", category: "Tech (Core)", enjoyment: 8, resources: 10, viability: 9, scale: 6, status: "PRIORITIZE", action: "Push MVP to Netlify; test voice logging." },
-    { id: "11", name: "travisBREAKS (Monorepo)", category: "Creative", enjoyment: 10, resources: 10, viability: 10, scale: 3, status: "PRIORITIZE", action: "Weekly maintain; fix MOTU routing issues." },
-    { id: "12", name: "Song: BPD Compassion", category: "Creative", enjoyment: 9, resources: 10, viability: 8, scale: 6, status: "PRIORITIZE", action: "Record scratch vocal." },
-    { id: "13", name: "Song: Psychosis vs Awakening", category: "Creative", enjoyment: 9, resources: 10, viability: 8, scale: 5, status: "PRIORITIZE", action: "Draft lyrics in Codex." },
-    { id: "14", name: "Personal Finance (DCA)", category: "Lifestyle", enjoyment: 5, resources: 8, viability: 10, scale: 9, status: "PRIORITIZE", action: "Set auto-transfer; forget it exists." },
-    { id: "15", name: "Roots, Ruin, Redemption EP", category: "Creative", enjoyment: 10, resources: 9, viability: 8, scale: 4, status: "PRIORITIZE", action: "Finish mix for 'The People Tree'." },
-    { id: "16", name: "Jurassic Coders (Satire)", category: "Content", enjoyment: 8, resources: 10, viability: 7, scale: 6, status: "PRIORITIZE", action: "Post only when bored; zero pressure." },
-    { id: "17", name: "Tiny Home Eval (Bingham)", category: "Lifestyle", enjoyment: 7, resources: 5, viability: 6, scale: 5, status: "WATCH", action: "Collect data; do not buy land yet." },
-    { id: "18", "name": "Men's Community / Red Pill", category: "Business", enjoyment: 4, resources: 6, viability: 5, scale: 7, status: "WATCH", action: "High burnout; low joy." },
-    { id: "19", "name": "Self-Defense Training", category: "Business", enjoyment: 7, resources: 8, viability: 4, scale: 2, status: "WATCH", action: "Do it for fun; don't sell it." },
-    { id: "20", "name": "Homelessness Venture", category: "Business", enjoyment: 6, resources: 2, viability: 3, scale: 9, status: "WATCH", action: "Operational nightmare." },
-    { id: "21", "name": "Philanthropic Fund", category: "Business", enjoyment: 8, resources: 0, viability: 1, scale: 10, status: "KILL/ARCHIVE", action: "Requires millions you don't have." },
-    { id: "22", "name": "Amazon/SBA Funding", category: "Business", enjoyment: 4, resources: 2, viability: 3, scale: 8, status: "KILL/ARCHIVE", action: "Debt trap risk." },
-    { id: "23", "name": "Business Acquisition", category: "Business", enjoyment: 2, resources: 1, viability: 4, scale: 8, status: "KILL/ARCHIVE", action: "You are buying a job you will hate." },
-    { id: "24", "name": "Crypto Mining (Home)", category: "Business", enjoyment: 3, resources: 4, viability: 2, scale: 3, status: "KILL/ARCHIVE", action: "3000W heat/noise is sovereign hell." }
+    // === BUILD NOW ===
+    { id: "1", name: "travisBREAKS (Portfolio)", category: "Creative", enjoyment: 10, resources: 10, viability: 10, scale: 8, status: "BUILD NOW", action: "Adaptive discovery engine: genre-selective music paths, SEO/GEO, blog refactor." },
+    { id: "2", name: "Project Jasper (AWS/Clawdbot)", category: "Tech (Core)", enjoyment: 9, resources: 10, viability: 9, scale: 8, status: "BUILD NOW", action: "Finalize EC2 instance & repo connection." },
+    { id: "3", name: "WGU Psychology Degree", category: "Education", enjoyment: 6, resources: 10, viability: 10, scale: 10, status: "BUILD NOW", action: "Complete current course module THIS WEEK." },
+
+    // === PRIORITIZE ===
+    { id: "4", name: "Blog / Content Engine", category: "Creative", enjoyment: 9, resources: 9, viability: 9, scale: 7, status: "PRIORITIZE", action: "Rename from 'codex' (OpenAI stole it). Persona-based routing. SEO driver. IN-FLIGHT." },
+    { id: "5", name: "SEO & GEO Implementation", category: "Tech (Core)", enjoyment: 7, resources: 10, viability: 9, scale: 8, status: "PRIORITIZE", action: "Netlify Prerender, JSON-LD schema, /llms.txt, robots.txt, sitemap." },
+    { id: "6", name: "Sovereign Matrix", category: "Tech (Core)", enjoyment: 8, resources: 10, viability: 10, scale: 4, status: "PRIORITIZE", action: "Deploy to Netlify. Add data export. Weekly check-in ritual." },
+    { id: "7", name: "Anemone Chorales", category: "Creative", enjoyment: 10, resources: 9, viability: 8, scale: 5, status: "PRIORITIZE", action: "Could feed into travisBREAKS music experience. Deploy standalone + integrate." },
+    { id: "8", name: "Roots, Ruin, Redemption EP", category: "Creative", enjoyment: 10, resources: 9, viability: 8, scale: 4, status: "PRIORITIZE", action: "Finish mix for 'The People Tree'." },
+    { id: "9", name: "Song: BPD Compassion", category: "Creative", enjoyment: 9, resources: 10, viability: 8, scale: 6, status: "PRIORITIZE", action: "Record scratch vocal." },
+    { id: "10", name: "Song: Psychosis vs Awakening", category: "Creative", enjoyment: 9, resources: 10, viability: 8, scale: 5, status: "PRIORITIZE", action: "Draft lyrics in blog." },
+    { id: "11", name: "Personal Finance (DCA)", category: "Lifestyle", enjoyment: 5, resources: 8, viability: 10, scale: 9, status: "PRIORITIZE", action: "Set auto-transfer; forget it exists." },
+
+    // === SUSTAIN ===
+    { id: "12", name: "Kimi Agent Mandala", category: "Creative", enjoyment: 8, resources: 10, viability: 10, scale: 3, status: "SUSTAIN", action: "SHIPPED. Lives on research page. Done unless graduating to main site." },
+    { id: "13", name: "Realmskeep Brand Ident", category: "Creative", enjoyment: 7, resources: 10, viability: 10, scale: 3, status: "SUSTAIN", action: "SHIPPED. Porting to Buddy's repo. Done." },
+    { id: "14", name: "Claude Usage Dashboard", category: "Tech (Core)", enjoyment: 7, resources: 10, viability: 10, scale: 2, status: "SUSTAIN", action: "SHIPPED to research page. Maintain only." },
+    { id: "15", name: "Codex Archive (figma-contribution)", category: "Creative", enjoyment: 6, resources: 10, viability: 10, scale: 3, status: "SUSTAIN", action: "SHIPPED. May evolve as blog refactor lands." },
+    { id: "16", name: "Suno Prompting System", category: "Creative", enjoyment: 7, resources: 10, viability: 9, scale: 2, status: "SUSTAIN", action: "Transfer from ChatGPT to Jasper." },
+    { id: "17", name: "Jurassic Coders (Satire)", category: "Content", enjoyment: 8, resources: 10, viability: 7, scale: 6, status: "SUSTAIN", action: "Post only when bored; zero pressure." },
+    { id: "18", name: "Sandcastle Dreams (Video)", category: "Creative", enjoyment: 9, resources: 7, viability: 5, scale: 6, status: "SUSTAIN", action: "Mocap testing only; do not animate full eps." },
+    { id: "19", name: "Dudes 'n Dragons Media", category: "Content", enjoyment: 8, resources: 8, viability: 6, scale: 5, status: "SUSTAIN", action: "Hobby category, not brand." },
+    { id: "20", name: "Spirituality Brand", category: "Business", enjoyment: 5, resources: 8, viability: 6, scale: 6, status: "SUSTAIN", action: "Put content on travisBREAKS blog." },
+    { id: "21", name: "Project 1137", category: "Tech (Exp)", enjoyment: 8, resources: 10, viability: 10, scale: 2, status: "SUSTAIN", action: "COMPLETE. Lives in portfolio. Stop developing." },
+
+    // === WATCH / EXPERIMENTAL ===
+    { id: "22", name: "Visualizer → Music Experience", category: "Tech (Exp)", enjoyment: 9, resources: 8, viability: 7, scale: 5, status: "WATCH", action: "Absorbing into travisBREAKS adaptive music layer. Not standalone." },
+    { id: "23", name: "Cymatic Experience", category: "Tech (Exp)", enjoyment: 8, resources: 7, viability: 6, scale: 4, status: "WATCH", action: "R3F decision tree. Untracked. Experimental." },
+    { id: "24", name: "Creative Lab", category: "Tech (Exp)", enjoyment: 8, resources: 7, viability: 5, scale: 4, status: "WATCH", action: "Next.js 16 playground. Experimental. No deploy pressure." },
+    { id: "25", name: "Sovereign Fitness PWA", category: "Tech (Core)", enjoyment: 8, resources: 8, viability: 9, scale: 6, status: "WATCH", action: "Deprioritized. Push MVP when bandwidth opens." },
+    { id: "26", name: "Tiny Home Eval (Bingham)", category: "Lifestyle", enjoyment: 7, resources: 5, viability: 6, scale: 5, status: "WATCH", action: "Collect data; do not buy land yet." },
+    { id: "27", name: "Self-Defense Training", category: "Business", enjoyment: 7, resources: 8, viability: 4, scale: 2, status: "WATCH", action: "Do it for fun; don't sell it." },
+
+    // === KILL/ARCHIVE ===
+    { id: "28", name: "Men's Community / Red Pill", category: "Business", enjoyment: 4, resources: 6, viability: 5, scale: 7, status: "KILL/ARCHIVE", action: "High burnout; low joy." },
+    { id: "29", name: "Homelessness Venture", category: "Business", enjoyment: 6, resources: 2, viability: 3, scale: 9, status: "KILL/ARCHIVE", action: "Operational nightmare." },
+    { id: "30", name: "Philanthropic Fund", category: "Business", enjoyment: 8, resources: 0, viability: 1, scale: 10, status: "KILL/ARCHIVE", action: "Requires millions you don't have." },
+    { id: "31", name: "Amazon/SBA Funding", category: "Business", enjoyment: 4, resources: 2, viability: 3, scale: 8, status: "KILL/ARCHIVE", action: "Debt trap risk." },
+    { id: "32", name: "Business Acquisition", category: "Business", enjoyment: 2, resources: 1, viability: 4, scale: 8, status: "KILL/ARCHIVE", action: "You are buying a job you will hate." },
+    { id: "33", name: "Crypto Mining (Home)", category: "Business", enjoyment: 3, resources: 4, viability: 2, scale: 3, status: "KILL/ARCHIVE", action: "3000W heat/noise is sovereign hell." },
+    { id: "34", name: "Adv. Creative Web Dev Tech Stack", category: "Business", enjoyment: 8, resources: 6, viability: 5, scale: 7, status: "KILL/ARCHIVE", action: "Absorbed into Jasper development." }
 ];
 
 // --- Icons Helper ---
@@ -285,7 +304,7 @@ export default function SovereignMatrix() {
                             Sovereign Matrix
                         </h1>
                         <p className="text-neon-cyan text-sm tracking-widest uppercase opacity-80">
-                            Priority Orchestration // v1.0.0
+                            Priority Orchestration // v2.0.0
                         </p>
                     </div>
 

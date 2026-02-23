@@ -1,9 +1,7 @@
 import SovereignMatrix from './SovereignMatrix'
 
 function App() {
-  return (
-    <SovereignMatrix />
-  )
+  return <SovereignMatrix />
 }
 
 export default App

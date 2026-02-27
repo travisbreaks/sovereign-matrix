@@ -56,6 +56,7 @@ export default function Modal({ isOpen, onClose, title, children }: ModalProps) 
                   {title}
                 </h2>
                 <button
+                  type="button"
                   onClick={onClose}
                   className="p-2 hover:bg-gray-800 border border-gray-700 hover:border-neon-pink transition-colors"
                 >

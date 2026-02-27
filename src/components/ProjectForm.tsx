@@ -104,7 +104,7 @@ export default function ProjectForm({ project, onSubmit, onCancel, mode }: Proje
             max="10"
             step="1"
             value={formData.enjoyment}
-            onChange={(e) => handleSliderChange('enjoyment', parseInt(e.target.value))}
+            onChange={(e) => handleSliderChange('enjoyment', parseInt(e.target.value, 10))}
             className="w-full h-2 bg-gray-800 rounded-lg appearance-none cursor-pointer accent-neon-pink"
           />
         </div>
@@ -120,7 +120,7 @@ export default function ProjectForm({ project, onSubmit, onCancel, mode }: Proje
             max="10"
             step="1"
             value={formData.resources}
-            onChange={(e) => handleSliderChange('resources', parseInt(e.target.value))}
+            onChange={(e) => handleSliderChange('resources', parseInt(e.target.value, 10))}
             className="w-full h-2 bg-gray-800 rounded-lg appearance-none cursor-pointer accent-neon-cyan"
           />
         </div>
@@ -136,7 +136,7 @@ export default function ProjectForm({ project, onSubmit, onCancel, mode }: Proje
             max="10"
             step="1"
             value={formData.viability}
-            onChange={(e) => handleSliderChange('viability', parseInt(e.target.value))}
+            onChange={(e) => handleSliderChange('viability', parseInt(e.target.value, 10))}
             className="w-full h-2 bg-gray-800 rounded-lg appearance-none cursor-pointer accent-neon-green"
           />
         </div>
@@ -152,7 +152,7 @@ export default function ProjectForm({ project, onSubmit, onCancel, mode }: Proje
             max="10"
             step="1"
             value={formData.scale}
-            onChange={(e) => handleSliderChange('scale', parseInt(e.target.value))}
+            onChange={(e) => handleSliderChange('scale', parseInt(e.target.value, 10))}
             className="w-full h-2 bg-gray-800 rounded-lg appearance-none cursor-pointer accent-neon-gold"
           />
         </div>

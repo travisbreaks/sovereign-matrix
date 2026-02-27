@@ -20,6 +20,7 @@ export default function EmptyState({ onAddProject }: EmptyStateProps) {
       </p>
 
       <button
+        type="button"
         onClick={onAddProject}
         className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-neon-cyan to-neon-green text-black font-bold uppercase text-sm tracking-wider hover:brightness-110 transition-all shadow-[0_0_20px_-5px_var(--color-neon-cyan)]"
       >

@@ -497,6 +497,7 @@ const ProjectCard = ({
         <div className="absolute top-2 left-2 flex gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
           {onEdit && (
             <button
+              type="button"
               onClick={() => onEdit(project)}
               className="p-1.5 bg-gray-800/80 hover:bg-neon-cyan/20 border border-gray-700 hover:border-neon-cyan transition-colors"
               title="Edit project"
@@ -506,6 +507,7 @@ const ProjectCard = ({
           )}
           {onDelete && (
             <button
+              type="button"
               onClick={() => onDelete(project.id)}
               className="p-1.5 bg-gray-800/80 hover:bg-red-500/20 border border-gray-700 hover:border-red-500 transition-colors"
               title="Delete project"
@@ -652,7 +654,7 @@ export default function SovereignMatrix() {
               Sovereign Matrix
             </h1>
             <p className="text-neon-cyan text-sm tracking-widest uppercase opacity-80">
-              Priority Orchestration // v2.0.0
+              Priority Orchestration / v2.0.0
             </p>
           </div>
 
@@ -663,6 +665,7 @@ export default function SovereignMatrix() {
               <div className="text-[10px] uppercase text-gray-500 tracking-wider">Active Entities</div>
             </div>
             <button
+              type="button"
               onClick={() => setModalMode('add')}
               className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-neon-cyan to-neon-green text-black font-bold uppercase text-sm tracking-wider hover:brightness-110 transition-all"
             >

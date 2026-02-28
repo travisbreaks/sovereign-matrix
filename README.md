@@ -2,6 +2,8 @@
 
 A dynamic project prioritization system with weighted scoring and real-time visualization. Built to help you ruthlessly prioritize what matters and kill what doesn't.
 
+![sovereign-matrix](https://assets.travisbreaks.com/github/sovereign-matrix.png)
+
 ## Features
 
 - **Real-time Weighted Scoring** - Adjust importance across 4 dimensions (Enjoyment, Resources, Viability, Scale)
@@ -88,3 +90,7 @@ Personal project - Travis Bonnet © 2026
 ## Credits
 
 Built with assistance from Gemini and Claude Code.
+
+---
+
+Part of the [travisBREAKS](https://travisbreaks.org) portfolio.

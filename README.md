@@ -2,6 +2,12 @@
 
 A dynamic project prioritization system with weighted scoring and real-time visualization. Built to help you ruthlessly prioritize what matters and kill what doesn't.
 
+[![Live Demo](https://img.shields.io/badge/demo-live-brightgreen)](https://travisbreaks.org/research/sovereign-matrix/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![React](https://img.shields.io/badge/React-19-61dafb)](https://react.dev)
+[![Tailwind](https://img.shields.io/badge/Tailwind-v4-38bdf8)](https://tailwindcss.com)
+[![Framer Motion](https://img.shields.io/badge/Framer_Motion-animated-ff0055)](https://motion.dev)
+
 ![sovereign-matrix](https://assets.travisbreaks.com/github/sovereign-matrix.png)
 
 ## Features
@@ -85,11 +91,7 @@ Clear your browser data to reset everything.
 
 ## License
 
-Personal project - Travis Bonnet © 2026
-
-## Credits
-
-Built with assistance from Gemini and Claude Code.
+[MIT](LICENSE)
 
 ---
 
